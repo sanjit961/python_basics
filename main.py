@@ -45,7 +45,7 @@ fruits =['Banana','Apple','Orange']
 x,y,z=fruits
 # print(x,y,z)
 # list
-vegetable =['Cabbage', 'Potato','Tomato','Pumkin','Shimla mirch','zinger','pea','apple']
+vegetable =['cabbage', 'potato','tomato','pumkin','shimla mirch','zinger','pea','apple']
 # print(vegetable)
 # The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
 # print(vegetable[2])
@@ -122,5 +122,21 @@ print(veg)
 #     newVeg.append(x)
 # print(newVeg)
 # With list comprehension you can do all that with only one line of code:
-newVeg = [x for x in veg if "a" in x]
-print(newVeg)
+# newVeg = [x for x in veg if "a" in x]
+# print(newVeg)
+# The condition is like a filter that only accepts the items that valuate to True.
+# newVeg =[x for x in veg if x != 'apple']
+# print(newVeg)
+# Sort List Alphanumerically
+# veg.sort()
+# Sort Descending
+# veg.sort(reverse=True)
+# Customize Sort Function
+# You can also customize your own function by using the keyword argument key = function.
+
+# The function will return a number that will be used to sort the list (the lowest number first):
+numbers = [100, 12, 44, 30, 10, 50,80]
+def myFunct(n):
+  return abs(n-30)
+numbers.sort(key = myFunct)
+print(numbers)
