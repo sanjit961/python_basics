@@ -45,7 +45,7 @@ fruits =['Banana','Apple','Orange']
 x,y,z=fruits
 # print(x,y,z)
 # list
-vegetable =['cabbage', 'potato','tomato','pumkin','shimla mirch','zinger','pea','apple']
+vegetable =['cabbage', 'potato','Tomato','pumkin','shimla mirch','zinger','Pea','apple', 'Apples']
 # print(vegetable)
 # The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
 # print(vegetable[2])
@@ -85,7 +85,7 @@ veg = vegetable
 # tuple
 # nonVeg = ("fish","Chicken")
 # veg.extend(nonVeg)
-print(veg)
+print('veg =>',veg)
 # Remove Specified Item
 # veg.remove("Cabbage")
 # Remove Specified Index
@@ -135,8 +135,16 @@ print(veg)
 # You can also customize your own function by using the keyword argument key = function.
 
 # The function will return a number that will be used to sort the list (the lowest number first):
-numbers = [100, 12, 44, 30, 10, 50,80]
-def myFunct(n):
-  return abs(n-30)
-numbers.sort(key = myFunct)
-print(numbers)
+# numbers = [100, 12, 44, 30, 10, 50,80]
+# def myFunct(n):
+#   return abs(n-30)
+# numbers.sort(key = myFunct)
+# print(numbers)
+# Case Insensitive Sort
+# veg.sort(key=str.lower)
+# Reverse Order
+# veg.reverse()
+# Copy a List
+# newCopy = veg.copy()
+# ake a copy of a list with the list() method:
+# newVege = list(veg)
