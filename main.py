@@ -7,3 +7,6 @@ if(sum > 10):
   print("Hey great!");
 else:
   print('Ahh!!');
+
+sentence = 'My name is Sanjit'
+print(len(sentence))
